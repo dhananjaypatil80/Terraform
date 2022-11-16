@@ -1,5 +1,5 @@
 resource "aws_instance" "instance" {
-  count = 4 
+  count = 1
   ami                         = var.ami_id # us-east-1
    
   instance_type               = var.instance_type
@@ -7,7 +7,7 @@ resource "aws_instance" "instance" {
  
   associate_public_ip_address = var.associate_public_ip
   availability_zone           = "ap-south-1a"
-  key_name                    = "mumbai-key"
+  key_name                    = "test-lab"
   #security_groups             = aws_security_group.demosg.id
    vpc_security_group_ids      = ["${aws_security_group.demosg.id}"]
   subnet_id                   = aws_subnet.public-subnet-1.id
