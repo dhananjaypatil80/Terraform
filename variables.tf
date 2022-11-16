@@ -1,6 +1,6 @@
 variable "ami_id" {
   type    = string
-  default = "ami-01216e7612243e0ef"
+  default = "ami-0e6329e222e662a52"
 }
 variable "instance_type" {
   type    = string
@@ -24,7 +24,7 @@ variable "instance_profile" {
 }
 variable "key" {
   type    = string
-  default = "mumbai-key"
+  default = "test-lab"
 }
 
 variable "volume_size" {
